@@ -1,0 +1,252 @@
+.item-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-number p {
+    color: #4d4b4b;
+}
+
+.item-info-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+/*            - ---------  */
+
+.text {
+    max-width: 700px;
+    margin: 0 0 30px;
+    background: #FFF;
+    border: 2px solid #7DCA86;
+    border-radius: 5px;
+    padding: 7px 15px;
+    box-sizing: border-box;
+}
+
+.tabs {
+    max-width: 700px;
+}
+
+.tabs__caption {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    position: relative;
+    margin: -1px 0 0 -1px;
+}
+
+.tabs__caption li:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: -2px;
+    z-index: -1;
+    height: 5px;
+    background: #7DCA86;
+}
+
+.tabs__caption:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.tabs__caption li {
+    padding: 9px 15px;
+    margin: 1px 0 0 1px;
+    background: #03852f;
+    color: #FFF;
+    position: relative;
+    border: solid #03852f;
+    border-width: 2px 2px 0;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.tabs__caption li:not(.active) {
+    cursor: pointer;
+}
+
+.tabs__caption li:not(.active):hover {
+    background: #7DCA86;
+    border-color: #7DCA86;
+}
+
+.tabs__caption .active {
+    background: #FFF;
+    color: #000;
+    border-color: #7DCA86;
+}
+
+.tabs__caption .active:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #FFF;
+}
+
+.tabs__content {
+    display: none;
+    background: #FFF;
+    border: 2px solid #7DCA86;
+    border-radius: 0 5px 5px 5px;
+    padding: 7px 15px;
+}
+
+.tabs__content.active {
+    display: block;
+}
+
+.vertical .tabs__caption {
+    float: left;
+    display: block;
+}
+
+.vertical .tabs__caption li {
+    float: none;
+    border-width: 2px 0 2px 2px;
+    border-radius: 5px 0 0 5px;
+}
+
+.vertical .tabs__caption li:last-child:before {
+    display: none;
+}
+
+.vertical .tabs__caption .active:after {
+    left: auto;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    width: 2px;
+    height: auto;
+}
+
+.vertical .tabs__content {
+    overflow: hidden;
+}
+
+.content-pic {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-desc {
+    text-align: justify;
+}
+
+.reviw-block+reviw-block {
+    border-bottom: 1px solid #4d4b4b;
+}
+
+.h3-title {
+    padding: 10px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #4d4b4b;
+}
+
+.reviw-block {
+    margin-bottom: 20px;
+}
+
+.reviw-block__title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.reviw-block__stars .star-box {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.content-photo {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-photo img {
+    margin: 50px;
+    transition: 1s;
+}
+
+.content-photo img :hover {
+    transform: scale(1.2);
+}
+
+.action-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #03852f;
+    border-radius: 5px;
+}
+
+.action-inner__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.positon-location__text {
+    color: #03852f;
+    margin-bottom: 20px;
+}
+
+.item-action {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #03852f;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.item-action:hover {
+    background-color: #FFF;
+    color: #03852f;
+    border: 1px solid #03852f;
+}
+
+.item-action:hover span::before {
+    color: #03852f;
+}
+
+.item-info__warning {
+    margin: 0 0 30px 10px;
+}
+
+.item-info__warning ul>li>p {
+    line-height: 22px;
+}
+
+tr th {
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+td {
+    line-height: 20px;
+}
+
+tr td {
+    padding: 10px;
+    border-bottom: 1px dotted #4d4b4b;
+}
+
+tr td:last-child {
+    text-align: right;
+}
